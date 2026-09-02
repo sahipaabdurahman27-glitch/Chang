@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>For Chang ❤️</title>
+<meta name="description" content="A little love letter for Chang.">
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Georgia,'Times New Roman',serif;background:#17000d;color:#fff}
+body{overflow-x:hidden;background:radial-gradient(circle at 50% 0,#ff4c82 0,#8b1243 34%,#260015 72%,#10000a 100%)}
+#hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:20}
+.heart{position:absolute;font-size:18px;opacity:.65;animation:float 7s linear forwards}
+@keyframes float{0%{transform:translateY(105vh) scale(.7) rotate(0);opacity:0}10%{opacity:.7}100%{transform:translateY(-15vh) scale(1.2) rotate(25deg);opacity:0}}
+.wrap{max-width:720px;margin:auto;padding:28px 18px 70px;position:relative;z-index:2}
+.hero{text-align:center;padding:26px 0 18px}
+.script{font-family:cursive;font-size:clamp(46px,13vw,88px);font-weight:400;line-height:.95;text-shadow:0 4px 18px #5b002c}
+.sub{letter-spacing:4px;text-transform:uppercase;font-size:11px;opacity:.82;margin-top:15px}
+.card{background:rgba(255,245,248,.94);color:#3b1024;border-radius:22px;padding:22px;box-shadow:0 18px 55px rgba(0,0,0,.35);margin:20px 0}
+.letter{font-size:19px;line-height:1.7}
+.letter .drop{font-size:45px;float:left;line-height:.8;padding-right:5px;color:#bd245c}
+.sig{text-align:right;font-family:cursive;font-size:29px;margin-top:12px}
+.music{display:flex;align-items:center;gap:15px;background:rgba(20,0,12,.6);border:1px solid rgba(255,255,255,.2);border-radius:18px;padding:14px}
+.vinyl{width:60px;height:60px;border-radius:50%;background:repeating-radial-gradient(circle,#111 0 2px,#222 3px 5px);display:grid;place-items:center;animation:spin 4s linear infinite}
+.vinyl:after{content:"";width:18px;height:18px;background:#f2c2d4;border-radius:50%;box-shadow:inset 0 0 0 6px #a01e54}
+@keyframes spin{to{transform:rotate(360deg)}}
+.music b{display:block;font-size:15px}.music span{font-size:12px;opacity:.72}
+.play{margin-left:auto;border:0;border-radius:50%;width:48px;height:48px;background:#fff;color:#8e1748;font-size:20px;cursor:pointer}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.gallery img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:16px;display:block;box-shadow:0 8px 22px rgba(0,0,0,.25)}
+.gallery img:nth-child(5){grid-column:span 2;aspect-ratio:16/9}
+.caption{text-align:center;font-family:cursive;font-size:27px;margin:4px 0 16px}
+.qrbox{text-align:center}
+.qrbox small{opacity:.7;display:block;margin-top:8px}
+iframe{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+footer{text-align:center;opacity:.65;font-size:12px;margin-top:30px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.78);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
+.modal.show{display:flex}.modal img{max-width:100%;max-height:88vh;border-radius:18px}.close{position:absolute;top:18px;right:18px;background:#fff;color:#600b32;border:0;border-radius:50%;width:42px;height:42px;font-size:24px}
+@media(min-width:650px){.gallery{grid-template-columns:repeat(3,1fr)}.gallery img:nth-child(5){grid-column:span 1;aspect-ratio:3/4}}
+</style>
+</head>
+<body>
+<div id="hearts"></div>
+<div class="wrap">
+  <section class="hero">
+    <div class="sub">A little something made with love</div>
+    <div class="script">Chang ❤️</div>
+    <div class="sub">for the one I will always come home to</div>
+  </section>
+
+  <div class="card letter">
+    <div><span class="drop">M</span>y Chang,</div>
+    <p>I may not always find the perfect words, but I hope you always feel how much you mean to me. Out of all the days, places, and moments in this life, I’m grateful that somehow they led me to you.</p>
+    <p>Whatever changes with time, my promise is simple: I’ll keep choosing you, caring for you, and finding my way back to you.</p>
+    <p>And if I could choose my favorite place in this world, it would always be wherever I’m with you.</p>
+    <div class="sig">Always yours ❤️</div>
+  </div>
+
+  <div class="music">
+    <div class="vinyl"></div>
+    <div><b>Libu-Libong Buwan (Uuwian)</b><span>Kyle Raphael • our song</span></div>
+    <button class="play" id="play">▶</button>
+  </div>
+
+  <div class="card">
+    <div class="caption">My favorite person 🌹</div>
+    <div class="gallery">
+      <img src="chang_1.jpg" alt="Chang" loading="eager">
+      <img src="chang_2.jpg" alt="Chang" loading="lazy">
+      <img src="chang_3.jpg" alt="Chang" loading="lazy">
+      <img src="chang_4.jpg" alt="Chang" loading="lazy">
+      <img src="chang_5.jpg" alt="Chang" loading="lazy">
+      <img src="chang_6.jpg" alt="Chang" loading="lazy">
+      <img src="chang_7.jpg" alt="Chang" loading="lazy">
+    </div>
+  </div>
+
+  <div class="card qrbox">
+    <div class="caption">A promise, not just a page. 💗</div>
+    <p>Scan this again whenever you miss me.</p>
+  </div>
+
+  <footer>Made especially for Chang • with all my love</footer>
+</div>
+
+<div class="modal" id="modal"><button class="close" id="close">×</button><img id="big" alt="Chang"></div>
+
+<script>
+const yt="https://www.youtube.com/embed/MVrPhW8933U?autoplay=1&playsinline=1";
+document.getElementById("play").onclick=()=>{window.open("https://youtu.be/MVrPhW8933U","_blank","noopener")};
+document.querySelectorAll(".gallery img").forEach(im=>im.onclick=()=>{document.getElementById("big").src=im.src;document.getElementById("modal").classList.add("show")});
+document.getElementById("close").onclick=()=>document.getElementById("modal").classList.remove("show");
+document.getElementById("modal").onclick=e=>{if(e.target.id==="modal")e.currentTarget.classList.remove("show")};
+const h=document.getElementById("hearts");
+setInterval(()=>{const x=document.createElement("div");x.className="heart";x.textContent=["♥","❤","♡","🌹"][Math.floor(Math.random()*4)];x.style.left=Math.random()*100+"vw";x.style.animationDuration=(5+Math.random()*5)+"s";x.style.fontSize=(12+Math.random()*18)+"px";h.appendChild(x);setTimeout(()=>x.remove(),10000)},550);
+</script>
+</body>
+</html>
